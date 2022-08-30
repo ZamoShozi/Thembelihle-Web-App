@@ -2,37 +2,55 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#loading-bar{
+  height: 95vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.dropdown-menu.show{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-menu p{
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: small;
+  color: red;
+}
+.btn-book-now{
+  margin-left: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-login{
+  width: 88%
 }
+.dropstart .dropdown-menu[data-bs-popper]{
+  margin-top: 80%;
+  margin-left: -200%;
+  margin-right: -120%;
+}
+@media (max-width: 992px){
+  .dropstart .dropdown-menu[data-bs-popper]{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.navbar{
+  width: 100vw;
+  position: fixed;
+  z-index: 50;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.bg-dark{
+  background-color: #292826!important;
+}
+.page-content{
+  height: 100vh;
+  padding-top: 55px;
 }
